@@ -1,1 +1,6 @@
-{{item.title}} ({{isOpen}})
+{{item.title}}
+{{#if isOpen}}
+  <ul>
+    <li>{{item.content}}</li>
+  </ul>
+{{/if}}
