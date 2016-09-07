@@ -10,6 +10,7 @@ export default Ember.Component.extend({
   }),
 
   click() {
-    //this.toggleProperty('isOpen');
+    let item = this.get('item');
+    this.attrs.selectItem(item);
   }
 });

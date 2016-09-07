@@ -1,3 +1,6 @@
 {{#each items as |item|}}
-  {{accordion-list-item item=item openItem=openItem}}
+  {{accordion-list-item
+    item=item
+    openItem=openItem
+    selectItem=(action 'selectItem')}}
 {{/each}}

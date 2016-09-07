@@ -4,8 +4,11 @@ export default Ember.Component.extend({
   tagName: 'ul',
   items: [],
 
-  openItem: Ember.computed('items.[]', function() {
-    let items = this.get('items');
-    return items[0];
-  })
+  openItem: null,
+
+  actions: {
+    selectItem(item) {
+      this.set('openItem', item);
+    }
+  }
 });
