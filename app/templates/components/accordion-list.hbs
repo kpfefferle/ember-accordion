@@ -2,5 +2,5 @@
   {{accordion-list-item
     item=item
     openItem=openItem
-    selectItem=(action 'selectItem')}}
+    selectItem=(action (mut openItem) item)}}
 {{/each}}
